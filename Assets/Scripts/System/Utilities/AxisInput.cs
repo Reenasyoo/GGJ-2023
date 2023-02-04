@@ -6,8 +6,8 @@ namespace Systems.Utilities
     public class AxisInput : MonoBehaviour, IInput
     {
         #region Properties
-        private static float HorizontalInput => Input.GetAxis(HORIZONTAL_STRING);
-        private static float VerticalInput => Input.GetAxis(VERTICAL_STRING);
+        private static float HorizontalInput => Input.GetAxisRaw(HORIZONTAL_STRING);
+        private static float VerticalInput => Input.GetAxisRaw(VERTICAL_STRING);
         public IInputVector InputVector { get; set; }
 
         #endregion

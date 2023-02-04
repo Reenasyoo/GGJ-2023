@@ -5,7 +5,8 @@ namespace Systems.Utilities
     public class RigidbodyMovement : IInputVector
     {
         #region Properties
-        
+
+        public Vector3 VelocityVector => _velocityVector;
         public float ForwardVelocity => _velocityVector.z;
 
         public bool CanMove { get; set; } = true;
@@ -52,7 +53,8 @@ namespace Systems.Utilities
             if (!CanMove) return GLOBALS.ZeroVector;
             
             // Converts transform from local to world space
-            var _targetVelocity = rigidbody.transform.TransformDirection(_velocityVector);
+            // var _targetVelocity = rigidbody.transform.TransformDirection(_velocityVector);
+            var _targetVelocity = _velocityVector;
             
             // Add movement speed to target velocity + delta time
             _targetVelocity *= (_moveSpeed * Time.fixedDeltaTime);

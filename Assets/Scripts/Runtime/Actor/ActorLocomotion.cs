@@ -30,6 +30,15 @@ namespace Runtime.Actor
 
         private void Update()
         {
+
+            if (_rigidbody.velocity != Vector3.zero)
+            {
+                float heading = Mathf.Atan2(_rigidbody.velocity.x, _rigidbody.velocity.z) * Mathf.Rad2Deg;
+                Quaternion rotation = Quaternion.Euler(0, heading, 0);
+                transform.rotation = rotation;
+            }
+
+
             if (_rigidbodyMovement.IsMoving && CanMove)
             {
                 SetWalking();
