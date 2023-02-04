@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4416360503731773547}
   - component: {fileID: 5157321406341103281}
   - component: {fileID: 386604153230907412}
+  - component: {fileID: 8381531956343335141}
   m_Layer: 0
   m_Name: Ruins01
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8381531956343335141
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761367866167227890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2474868724713681997, guid: 3fa21df81775bc14d97554434cb363ef, type: 3}

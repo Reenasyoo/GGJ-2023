@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6170856153421519401}
   - component: {fileID: 7588105474931813915}
   - component: {fileID: 5817540186191016546}
+  - component: {fileID: -6126502946885597588}
   m_Layer: 0
   m_Name: Rock05
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-6126502946885597588
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222912377638097523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4488564, y: 2.4351141, z: 2.2282128}
+  m_Center: {x: -0.35005444, y: 1.1137277, z: -0.20803508}
