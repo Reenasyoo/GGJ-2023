@@ -156,7 +156,7 @@ Material:
     m_Colors:
     - _BurnCol: {r: 1.9597687, g: 0.24029902, b: 2.037736, a: 1}
     - _BurnColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.09411765, g: 1.4745098, b: 5.992157, a: 1}
+    - _Color: {r: 8.564653, g: 4.7768483, b: 3.6763372, a: 1}
     - _Displacement_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Displacement_Panning: {r: 0, g: 0, b: 0, a: 0}
     - _Displacement_Tiling: {r: 1, g: 1, b: 0, a: 0}
