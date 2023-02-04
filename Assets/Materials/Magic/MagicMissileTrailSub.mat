@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MagicMissileTrailSub
+  m_Shader: {fileID: -6465566751694194690, guid: 3246c88f8a6917b49a78306017d0e19f,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4e4396e1027d4b63a40ddb8ba7251db3:
+        m_Texture: {fileID: 2800000, guid: 2401bc9a9b28b4348adfa9ea790a9197, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Vector1_6b233673f3d64622a3d753fa7dba478a: 0
+    - Vector1_ae7b8321fe7740f9bef94f56ba10dde0: 35
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    m_Colors:
+    - Color_4a821ebbac134345b6c5f912466532a8: {r: 0.73198783, g: 0.19188327, b: 0.83018875,
+        a: 0}
+    - Color_98ed83ab9f774d92b57078dfc32762fb: {r: 0.84705883, g: 1.1921569, b: 5.992157,
+        a: 0}
+    - Vector2_60cb13306a1d4107b1ca56c4bb142626: {r: -1, g: 0, b: 0, a: 0}
+    - Vector2_95bc84a45db3448cabe454a60267a58d: {r: -0.5, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &4323961518529452711
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
