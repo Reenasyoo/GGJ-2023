@@ -9,11 +9,9 @@ namespace Runtime.Actor
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Interactable"))
-            {
-                var interaction = other.GetComponent<IInteractionAction>();
-                _facade.ActionController.StartListeningForInput(interaction);
-            }
+            if (!other.CompareTag("Interactable")) return;
+            var interaction = other.GetComponent<IInteractionAction>();
+            _facade.ActionController.StartListeningForInput(interaction);
         }
     }
 }

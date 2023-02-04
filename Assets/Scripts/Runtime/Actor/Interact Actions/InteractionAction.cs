@@ -1,31 +1,24 @@
 ﻿using System;
 using Runtime.Resources;
-using Systems.GameEvents;
 using UnityEngine;
 
 namespace Runtime.Actor.InteractActions
 {
-    public enum InteractionType
-    {
-        Pickup,
-        Upgrade,
-        Interact
-    }
-    
     public class InteractionAction : MonoBehaviour, IInteractionAction
     {
         [SerializeField] private InteractionType interactionType;
-        [SerializeField] private Resource resource;
-
-
+        
         public InteractionType Type => interactionType;
 
         private Collider _triggerCollider;
 
-        private void Awake()
+        protected delegate void InteractionCallback();
+        protected event InteractionCallback Callback;
+
+        protected virtual void Awake()
         {
             DetectTriggerCollider();
-            resource.scriptableResource.SetResourceAmount(resource.amount);
+            
         }
 
         public void DoInteraction()
@@ -35,7 +28,7 @@ namespace Runtime.Actor.InteractActions
             switch (Type)
             {
                 case InteractionType.Pickup:
-                    resource.AddResourceToInventory();
+                    Callback?.Invoke();
                     break;
                 case InteractionType.Upgrade:
                     break;
