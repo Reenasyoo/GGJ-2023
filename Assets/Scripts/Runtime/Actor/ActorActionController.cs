@@ -1,5 +1,4 @@
-using System;
-using System.Collections.Generic;
+ using System.Collections.Generic;
 using Runtime.Actor.InteractActions;
 using UnityEngine;
 
@@ -27,7 +26,6 @@ namespace Runtime.Actor
         {
             if (_canListenForInput)
             {
-                print("listening");
                 ListenForActionInput();
             }
         }
@@ -54,6 +52,11 @@ namespace Runtime.Actor
             {
                 _currentInteraction = interaction;
             }
+        }
+
+        public void StopListeningForInput()
+        {
+            _canListenForInput = false;
         }
         
         private ActionInput GetInputType(InteractionType type)
