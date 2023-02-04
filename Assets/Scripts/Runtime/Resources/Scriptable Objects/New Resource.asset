@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8538b96eaeaf47dd85b6595446e1e8b0, type: 3}
-  m_Name: New Magic Resource
+  m_Script: {fileID: 11500000, guid: 9cd4da5c4fba4262bac693b2a21583c1, type: 3}
+  m_Name: New Resource
   m_EditorClassIdentifier: 
   Name: Earth
   Type: 0
