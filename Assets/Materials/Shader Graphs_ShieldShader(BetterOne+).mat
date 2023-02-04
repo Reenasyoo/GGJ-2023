@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5954857582872466748
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ShieldShader2
-  m_Shader: {fileID: -6465566751694194690, guid: d3da114172196f34585d6aa22cb43b0d,
+  m_Name: Shader Graphs_ShieldShader(BetterOne+)
+  m_Shader: {fileID: -6465566751694194690, guid: b219116c648192943888486f36f8b0e7,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -52,13 +39,30 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0.015
+    - _Fill: 0.17
     - _FresnelStrenght: 5
+    - _NoiseScale: 400
+    - _NoiseScrollSpeed: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScroolSpeed: 0.05
-    - _ShieldAlpha: 0.2
+    - _ShieldAlpha: 0.1
+    - _ShieldHit: 0
     m_Colors:
-    - _ShieldColor: {r: 0, g: 2.1249418, b: 10.680629, a: 1}
-    - _ShieldTextureTiling: {r: 3, g: 2, b: 0, a: 0}
+    - _ShieldColor: {r: 0, g: 0.62303656, b: 0.9999999, a: 0}
+    - _ShieldColorHit: {r: 1, g: 0.048383586, b: 0, a: 0}
+    - _ShieldTextureTiling: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &2017082470745869185
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5

@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeavesTexture:
-        m_Texture: {fileID: 2800000, guid: 8a07ee21ef7cf2f439ccf37e46ac2033, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0f41ed929b299394098a2c7b97a1c233, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -80,11 +80,11 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SSPower: 0.25
-    - _SSRadius: 0.67
+    - _SSRadius: 0.99
     - _Smoothness: 0
     - _SrcBlend: 1
     - _Surface: 0
-    - _UnderColor: 0.35
+    - _UnderColor: 0.93
     - _WindSpeed: 0.0221
     - _WindStrength: 0.05
     - _WorkflowMode: 1
@@ -92,9 +92,9 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 0.4431373, g: 0.5882353, b: 0.1764706, a: 1}
+    - _Color: {r: 0.45704067, g: 0.6981132, b: 0.18111429, a: 1}
     - _EdgeEmission: {r: 2, g: 2, b: 2, a: 1}
-    - _SSTint: {r: 0.34117648, g: 0.4901961, b: 0.14509805, a: 1}
+    - _SSTint: {r: 0.5636243, g: 0.8301887, b: 0.16055535, a: 1}
     - _TreeColor: {r: 0.6078432, g: 0.7529412, b: 0.21960777, a: 1}
     - _WindDirection: {r: 0.1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
