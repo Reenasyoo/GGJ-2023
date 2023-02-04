@@ -58,7 +58,8 @@ namespace Systems.Utilities
             _targetVelocity *= (_moveSpeed * Time.fixedDeltaTime);
             
             // Remove y velocity so we dont disrupt any other applied gravitys
-            _targetVelocity.y = rigidbody.velocity.y;
+            // _targetVelocity.y = rigidbody.velocity.y;
+            _targetVelocity.y = -10f;
             
             // Return our targetable velocity;
             return _targetVelocity;

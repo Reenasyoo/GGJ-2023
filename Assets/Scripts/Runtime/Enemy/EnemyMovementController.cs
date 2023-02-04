@@ -9,10 +9,16 @@ namespace Runtime.Enemy
         [SerializeField] private EnemyFacade _facade;
         [SerializeField] private NavMeshAgent navMeshAgent;
 
+        private bool targetInRange = false;
+
+        private void Awake()
+        {
+            SetDestination();
+        }
 
         private void Update()
         {
-            SetDestination();
+            
         }
 
         public void DisableMovement()
@@ -22,7 +28,7 @@ namespace Runtime.Enemy
 
         public void SetDestination()
         {
-            navMeshAgent.SetDestination(_facade.Target.position);
+            if(_facade.Target != null) navMeshAgent.SetDestination(_facade.Target.position);
             navMeshAgent.isStopped = false;
         }
     }

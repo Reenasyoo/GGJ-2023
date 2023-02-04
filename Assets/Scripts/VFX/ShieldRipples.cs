@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,7 @@ public class ShieldRipples : MonoBehaviour
     {
         ActivateVFX(collision.GetContact(0).point);
     }
+    
 
     public void ActivateVFX(Vector3 point)
     {
