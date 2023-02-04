@@ -64,20 +64,5 @@ namespace Runtime.Actor
 
             return null;
         }
-
-        private void Attack()
-        {
-            
-        }
-
-        private void Pickup()
-        {
-            
-        }
-
-        private void Interact()
-        {
-            
-        }
     }
 }

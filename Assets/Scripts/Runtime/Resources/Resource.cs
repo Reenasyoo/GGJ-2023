@@ -9,11 +9,13 @@ namespace Runtime.Resources
     {
         [Header("Resource")]
         public ScriptableResource scriptableResource;
-        public int amount;
+        public int Amount;
         
         [Header("Event")]
         public ResourceGameEvent gameEvent;
         
-        public void AddResourceToInventory() => gameEvent.Raise(scriptableResource);
+        public void AddResourceToInventory() => gameEvent.Raise(this);
+        // public void SetResourceAmount(int amount) => Amount = amount;
+        public int GetAmount() => Amount;
     }
 }

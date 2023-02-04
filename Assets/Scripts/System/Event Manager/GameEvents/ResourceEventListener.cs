@@ -10,8 +10,8 @@ namespace Systems.GameEvents
         [Tooltip("Event to register with.")] public ResourceGameEvent GameEvent = null;
 
         [Tooltip("Response to invoke when Event is raised.")]
-        public UnityEvent<ScriptableResource> Response = null;
+        public UnityEvent<Resource> Response = null;
 
-        public void OnEventRaised(ScriptableResource item) => Response.Invoke(item);
+        public void OnEventRaised(Resource item) => Response.Invoke(item);
     }
 }

@@ -8,6 +8,11 @@ namespace Runtime.Inventory
     public class InventoryItem
     {
         public ScriptableResource resource;
-        public int amount;
+        public int amount = 0;
+        public InventoryItem(ScriptableResource res)
+        {
+            resource = res;
+            amount = 0;
+        }
     }
 }
