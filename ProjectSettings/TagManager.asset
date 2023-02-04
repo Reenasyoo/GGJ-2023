@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactable
+  - Item
+  - Door
   - Shield
+  - Enemy
   layers:
   - Default
   - TransparentFX
