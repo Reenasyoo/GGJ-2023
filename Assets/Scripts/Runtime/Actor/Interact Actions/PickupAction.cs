@@ -12,7 +12,6 @@ namespace Runtime.Actor.InteractActions
         protected override void Awake()
         {
             base.Awake();
-            // resource.SetResourceAmount(resource.amount);
             Callback += resource.AddResourceToInventory;
         }
     }
