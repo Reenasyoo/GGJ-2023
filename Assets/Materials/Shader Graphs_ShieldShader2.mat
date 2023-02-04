@@ -52,10 +52,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FresnelStrenght: 2
+    - _Fill: 0.015
+    - _FresnelStrenght: 5
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScroolSpeed: 0.05
+    - _ShieldAlpha: 0.2
     m_Colors:
-    - _ShieldColor: {r: 0, g: 1.2392157, b: 2, a: 1}
+    - _ShieldColor: {r: 0, g: 2.1249418, b: 10.680629, a: 1}
+    - _ShieldTextureTiling: {r: 3, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
