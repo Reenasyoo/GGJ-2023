@@ -8,10 +8,10 @@ namespace Runtime.Actor
     {
         [SerializeField] private Rigidbody _rigidbody;
 
-        
+
         [SerializeField] private ActorFacade _facade;
-        [SerializeField] private ActorSettings _settings;        
-        
+        [SerializeField] private ActorSettings _settings;
+
         private IInput _input;
         private RigidbodyMovement _rigidbodyMovement;
 
@@ -28,16 +28,16 @@ namespace Runtime.Actor
 
         private void Update()
         {
-            if(_rigidbodyMovement.IsMoving)
+            if (_rigidbodyMovement.IsMoving)
             {
                 SetWalking();
             }
         }
-        
+
         private void SetWalking()
         {
             _rigidbodyMovement.SetMoveSpeed(ref _settings.WalkingSpeed);
-            // _facade.AnimationController.SetState(ActionState.WALKING);
+            _facade.AnimationController.SetState(ActionState.WALKING);
         }
     }
 }
