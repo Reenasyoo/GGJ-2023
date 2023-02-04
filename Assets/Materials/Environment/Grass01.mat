@@ -39,12 +39,12 @@ Material:
     - _BUILTIN_QueueOffset: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SingleColor: 0
+    - _SingleColor: 1
     - _WindSpeed: 0.0218
     - _WindStrength: 0.035
     m_Colors:
-    - _BottomColor: {r: 0.23921569, g: 0.9254902, b: 0.56078434, a: 0}
-    - _TopColor: {r: 0.41568628, g: 0.6862745, b: 0.26666668, a: 0}
+    - _BottomColor: {r: 0.3647059, g: 0.5019608, b: 0.13725491, a: 0}
+    - _TopColor: {r: 0.3633822, g: 0.49056602, b: 0, a: 1}
     - _WindDirection: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &227693355393006886

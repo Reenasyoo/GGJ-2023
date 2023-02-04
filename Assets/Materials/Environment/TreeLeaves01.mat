@@ -23,12 +23,28 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _DissolveNoise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Leaf:
         m_Texture: {fileID: 2800000, guid: 0f41ed929b299394098a2c7b97a1c233, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeavesTexture:
-        m_Texture: {fileID: 2800000, guid: 0f41ed929b299394098a2c7b97a1c233, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8a07ee21ef7cf2f439ccf37e46ac2033, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -54,13 +70,18 @@ Material:
     - _Cull: 0
     - _DstBlend: 0
     - _HueShift: 0
+    - _InvertDissolve: 1
+    - _IsTree: 1
+    - _Metallic: 0
     - _NPower: 1
     - _NSoftness: 0.2
+    - _NoiseScale: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SSPower: 0.25
     - _SSRadius: 0.67
+    - _Smoothness: 0
     - _SrcBlend: 1
     - _Surface: 0
     - _UnderColor: 0.35
@@ -71,8 +92,10 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 0.41568628, g: 0.68627447, b: 0.26666668, a: 0}
-    - _SSTint: {r: 0.23985407, g: 0.9245283, b: 0.55897933, a: 0}
+    - _Color: {r: 0.4431373, g: 0.5882353, b: 0.1764706, a: 1}
+    - _EdgeEmission: {r: 2, g: 2, b: 2, a: 1}
+    - _SSTint: {r: 0.34117648, g: 0.4901961, b: 0.14509805, a: 1}
+    - _TreeColor: {r: 0.6078432, g: 0.7529412, b: 0.21960777, a: 1}
     - _WindDirection: {r: 0.1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &687066142853101324

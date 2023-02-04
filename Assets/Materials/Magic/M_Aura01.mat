@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-543460959550593579
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Aura01
+  m_Shader: {fileID: -6465566751694194690, guid: baa72875dadc2a3409f04263d59f2e42,
+    type: 3}
+  m_ValidKeywords:
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - DepthOnly
+  - SHADOWCASTER
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DistortionGuide:
+        m_Texture: {fileID: 2800000, guid: 0b57a79cebd539c4c87b763453327e85, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Distortion_Guide:
+        m_Texture: {fileID: 2800000, guid: 86d362e5bf550f342883311a538e03bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _InSubTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ac33d335dda3aaa4e9fdbdba9ce37992, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondTex:
+        m_Texture: {fileID: 2800000, guid: 0b57a79cebd539c4c87b763453327e85, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BurnSize: 0
+    - _CastShadows: 0
+    - _CircleMask: 0
+    - _Circle_Mask: 1
+    - _Contrast: 2.6
+    - _Cull: 2
+    - _CustomDataMainTexOffset_x_y_Cutoff_z: 0
+    - _CustomData_MainTexOffset_X_Y__Cutoff_Z__InSubTexCutoff_W: 1
+    - _Cutoff: 0
+    - _CutoffSoftness: 0
+    - _Cutoff_Softness: 0
+    - _DistortionAmount: 0
+    - _Distortion_Amount: 0.23
+    - _DstBlend: 10
+    - _InSubTexCutoff: 0
+    - _InSubTexCutoffSoftness: 0
+    - _InSubTexDistortionAmount: 0
+    - _InSubTex_Cutoff: 0
+    - _InSubTex_CutoffSoftness: 0
+    - _InSubTex_DistortionAmount: 0
+    - _InnerRadius: 0.5
+    - _Inner_Radius: -1
+    - _LengthScale: 1
+    - _Length_Scale: 1
+    - _OuterRadius: 0.5
+    - _Outer_Radius: 0.25
+    - _PolarCoordinates: 0
+    - _Polar_Coordinate: 1
+    - _Power: 1.4
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _RadialScale: 1
+    - _Radial_Scale: 0.76
+    - _Rotate: -90
+    - _Smoothness: 0.25
+    - _SrcBlend: 5
+    - _Surface: 1
+    - _UseInSubTex: 0
+    - _UseSecondTex: 0
+    - _Use_InSubTex: 0
+    - _Use_SecondTex: 1
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _ZWriteControl: 0
+    m_Colors:
+    - _BurnColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.7529412, g: 3.482353, b: 5.992157, a: 1}
+    - _DistortionPanning: {r: 0, g: 0, b: 0, a: 0}
+    - _DistortionTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Distortion_Panning: {r: 0, g: -0.2, b: 0, a: 0}
+    - _Distortion_Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _InSubColor: {r: 1, g: 1, b: 1, a: 1}
+    - _InSubOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _InSubPanning: {r: 0, g: 0, b: 0, a: 0}
+    - _InSubTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _InSub_Color: {r: 1, g: 0, b: 0, a: 1}
+    - _InSub_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _InSub_Panning: {r: 0, g: 0, b: 0, a: 0}
+    - _InSub_Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _MainTexOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _MainTexPanning: {r: 0, g: -0.8, b: 0, a: 0}
+    - _MainTexTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _MainTex_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _MainTex_Panning: {r: 0, g: -0.8, b: 0, a: 0}
+    - _MainTex_Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _SecondTexOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondTexPanning: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondTexTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _SecondTex_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _SecondTex_Panning: {r: 0, g: -0.8, b: 0, a: 0}
+    - _SecondTex_Tiling: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
