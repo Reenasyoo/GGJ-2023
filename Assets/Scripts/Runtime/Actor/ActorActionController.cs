@@ -38,7 +38,7 @@ namespace Runtime.Actor
             {
                 if (_currentInteractionType.Pressed())
                 {
-                    Debug.Log("Pressed");
+                    print("Pressed");
                     _currentInteraction.DoInteraction();
                     _canListenForInput = false;
                 }
@@ -64,24 +64,6 @@ namespace Runtime.Actor
 
             return null;
         }
-        
-        
-        // private void DoAction()
-        // {
-        //     switch (_currentAction)
-        //     {
-        //         case InteractionType.Pickup:
-        //             Pickup();
-        //             break;
-        //         case InteractionType.Upgrade:
-        //             break;
-        //         case InteractionType.Interact:
-        //             Interact();
-        //             break;
-        //         default:
-        //             throw new ArgumentOutOfRangeException();
-        //     }
-        // }
 
         private void Attack()
         {
