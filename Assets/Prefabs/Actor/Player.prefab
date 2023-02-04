@@ -207,3 +207,5 @@ MonoBehaviour:
   inputs:
   - type: 0
     inputValue: 101
+  - type: 1
+    inputValue: 101

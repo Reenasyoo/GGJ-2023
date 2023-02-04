@@ -12,7 +12,7 @@ namespace Systems.GameEvents
         // TODO: Add debug global flag to set this to false
         [SerializeField] private bool _dispatchMessage = false;
 
-        public void Raise(ScriptableResource item)
+        public void Raise(Resource item)
         {
             foreach (var listener in _eventListeners)
             {

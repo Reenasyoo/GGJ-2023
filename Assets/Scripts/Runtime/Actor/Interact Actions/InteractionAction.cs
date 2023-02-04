@@ -1,14 +1,11 @@
 ﻿using System;
-using Runtime.Resources;
 using UnityEngine;
 
 namespace Runtime.Actor.InteractActions
 {
-    public class InteractionAction : MonoBehaviour, IInteractionAction
+    public abstract class InteractionAction : MonoBehaviour, IInteractionAction
     {
-        [SerializeField] private InteractionType interactionType;
-        
-        public InteractionType Type => interactionType;
+        public abstract InteractionType Type { get; }
 
         private Collider _triggerCollider;
 
@@ -18,7 +15,6 @@ namespace Runtime.Actor.InteractActions
         protected virtual void Awake()
         {
             DetectTriggerCollider();
-            
         }
 
         public void DoInteraction()
@@ -31,6 +27,7 @@ namespace Runtime.Actor.InteractActions
                     Callback?.Invoke();
                     break;
                 case InteractionType.Upgrade:
+                    Callback?.Invoke();
                     break;
                 case InteractionType.Interact:
                 default:
