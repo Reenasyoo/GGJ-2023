@@ -10,9 +10,13 @@ namespace Runtime.Buildables.Turret
         [SerializeField] private GameObject ammunition;
         [SerializeField] private Transform attackFromPoint;
 
-        private Transform _currentTarget;
         private ObjectPool<GameObject> _ammoPool;
         private InstantiatedObjects objList = new InstantiatedObjects();
+
+        public float range = 15f;
+        public float fireRate = 1f;
+        private float fireCountdown = 0;
+        private Transform target;
 
         private void Awake()
         {
@@ -23,6 +27,7 @@ namespace Runtime.Buildables.Turret
         {
             _ammoPool = new ObjectPool<GameObject>(ammunition, 5);
             InstantiatePoolObjects();
+            InvokeRepeating("UpdateTarget", 0f, 0.5f);
         }
 
         private void InstantiatePoolObjects()
@@ -41,20 +46,25 @@ namespace Runtime.Buildables.Turret
             var tmp = objList.list.FirstOrDefault();
             _ammoPool.ActivateObject();
             objList.ActivateObject();
-            
+
             tmp.obj.transform.position = attackFromPoint.position;
+
             tmp.obj.SetActive(true);
+
+
+            if (tmp.obj.activeInHierarchy) tmp.obj.GetComponent<TurretBullet>().Seek(target);
+            tmp.obj.GetComponent<TurretBullet>().controller = this;
         }
-        
-        private void DeactivateBullet()
+
+        public void DeactivateBullet()
         {
             var tmp = objList.active.FirstOrDefault();
             _ammoPool.DeactivateObject();
             objList.DeactivateObject();
-            
+
             tmp.obj.SetActive(false);
         }
-            
+
         private void Attack()
         {
             ActivateBullet();
@@ -66,8 +76,51 @@ namespace Runtime.Buildables.Turret
             {
                 Attack();
             }
+
+            if (target == null) return;
+
+            if (fireCountdown <= 0f)
+            {
+                Attack();
+                fireCountdown = 1f / fireRate;
+            }
+
+            fireCountdown -= Time.deltaTime;
+        }
+
+        void UpdateTarget()
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy"); //change later if needed
+            float shortestDistance = Mathf.Infinity;
+            GameObject nearestEnemy = null;
+            if (enemies.Length > 0)
+            {
+                foreach (GameObject enemy in enemies)
+                {
+                    float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+                    if (distanceToEnemy < shortestDistance)
+                    {
+                        shortestDistance = distanceToEnemy;
+                        nearestEnemy = enemy;
+                    }
+                }
+            }
+
+            if (nearestEnemy != null && shortestDistance <= range)
+            {
+                target = nearestEnemy.transform;
+                //targetEnemy = nearestEnemy.GetComponent<Enemy>();
+            }
+            else
+            {
+                target = null;
+            }
+        }
+
+        void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, range);
         }
     }
-    
-    
 }
