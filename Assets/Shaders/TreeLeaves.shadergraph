@@ -41,12 +41,6 @@
         },
         {
             "m_Id": "c7c3b963ed604044ade4e29c907a9666"
-        },
-        {
-            "m_Id": "bf97a4f1b4ae452db1eac894de01e7b1"
-        },
-        {
-            "m_Id": "46ec6506470d4b29bf0cbcb73aa7aeae"
         }
     ],
     "m_Keywords": [],
@@ -2210,33 +2204,6 @@
     },
     "m_Property": {
         "m_Id": "dc161481133240bfbd95a691c93ca795"
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "46ec6506470d4b29bf0cbcb73aa7aeae",
-    "m_Guid": {
-        "m_GuidSerialized": "c95ad184-bed9-4104-8c2b-46126018382a"
-    },
-    "m_Name": "BillboardScale",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "BillboardScale",
-    "m_DefaultReferenceName": "_BillboardScale",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 1.0,
-    "m_FloatType": 0,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
     }
 }
 
@@ -4616,33 +4583,6 @@
 }
 
 {
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "bf97a4f1b4ae452db1eac894de01e7b1",
-    "m_Guid": {
-        "m_GuidSerialized": "1b935166-ea6b-440d-b4b0-99974dc3be9f"
-    },
-    "m_Name": "BillboardInflate",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "BillboardInflate",
-    "m_DefaultReferenceName": "_BillboardInflate",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 1.0,
-    "m_FloatType": 0,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
-    }
-}
-
-{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "c0da7f8903f941d2bae060d6ed9af142",
@@ -5906,12 +5846,6 @@
         },
         {
             "m_Id": "c7c3b963ed604044ade4e29c907a9666"
-        },
-        {
-            "m_Id": "bf97a4f1b4ae452db1eac894de01e7b1"
-        },
-        {
-            "m_Id": "46ec6506470d4b29bf0cbcb73aa7aeae"
         },
         {
             "m_Id": "0620ce1493324d3ab6cffaa06d19313e"
