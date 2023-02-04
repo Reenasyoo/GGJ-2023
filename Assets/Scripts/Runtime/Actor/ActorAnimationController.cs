@@ -108,20 +108,17 @@ namespace Runtime.Actor
         public void TriggerPickupAnimation()
         {
             _facade.Locomotion.CanMove = false;
-            animator.SetTrigger(AnimationID.PICKUP_TRIGGER);
-            var clipInfo = animator.GetCurrentAnimatorClipInfo(0);
-            var clipName = clipInfo[0].clip.name;
-            print(clipName);
-            
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Pickup"))
-            {
-                print(animator.GetCurrentAnimatorStateInfo(0).length);
-            }
+            StartCoroutine(StartAnimationCountDown());
         }
 
         IEnumerator StartAnimationCountDown()
         {
-            yield return new WaitForSeconds(1f);
+            animator.SetTrigger(AnimationID.PICKUP_TRIGGER);
+            yield return new WaitForSeconds(0.2f);
+            var clipInfo = animator.GetCurrentAnimatorClipInfo(0);
+            var clipLenght = clipInfo[0].clip.length;
+            yield return new WaitForSeconds((clipLenght / 3) + 0.2f);
+            _facade.Locomotion.CanMove = true;
         }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using Runtime.Actor.InteractActions;
+﻿using System;
+using Runtime.Actor.InteractActions;
 using UnityEngine;
 
 namespace Runtime.Actor
@@ -12,6 +13,12 @@ namespace Runtime.Actor
             if (!other.CompareTag("Interactable")) return;
             var interaction = other.GetComponent<IInteractionAction>();
             _facade.ActionController.StartListeningForInput(interaction);
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (!other.CompareTag("Interactable")) return;
+            _facade.ActionController.StopListeningForInput();
         }
     }
 }
