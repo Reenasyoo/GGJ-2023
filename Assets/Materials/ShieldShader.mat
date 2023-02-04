@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ShieldShader(BetterOne)
+  m_Name: ShieldShader
   m_Shader: {fileID: -6465566751694194690, guid: d3da114172196f34585d6aa22cb43b0d,
     type: 3}
   m_ValidKeywords: []
@@ -35,7 +35,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Texture:
-        m_Texture: {fileID: 2800000, guid: 19e67eeca1b2e35478f222a12d02e497, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1cb81e4b64aa506498cfd746a8f14eab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -52,13 +52,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0.015
-    - _FresnelStrenght: 5
+    - _Fill: 0.51
+    - _Float: 0.96
+    - _FresnelStrenght: 3.96
+    - _Power: 8.44
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScroolSpeed: 0.05
-    - _ShieldAlpha: 0.2
+    - _ShieldAlpha: 3.28
+    - _VertexOffsetFreq: 0
     m_Colors:
-    - _ShieldColor: {r: 0, g: 2.1249418, b: 10.680629, a: 1}
-    - _ShieldTextureTiling: {r: 3, g: 2, b: 0, a: 0}
+    - _ShieldColor: {r: 0, g: 33.210655, b: 166.92725, a: 1}
+    - _ShieldTextureTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _VertexOffsetDIrection: {r: 0.3, g: 0.3, b: 0.3, a: 0}
   m_BuildTextureStacks: []
