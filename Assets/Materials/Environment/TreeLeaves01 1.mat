@@ -79,7 +79,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SSPower: 1.87
+    - _SSPower: 0.07
     - _SSRadius: 0.76
     - _Smoothness: 0
     - _SrcBlend: 1
