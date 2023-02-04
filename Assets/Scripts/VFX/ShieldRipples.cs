@@ -7,19 +7,25 @@ public class ShieldRipples : MonoBehaviour
     public GameObject ripplesVFX;
     public GameObject hitVFX;
     private Material mat;
+    //List<ContactPoint> contactPointList = new List<ContactPoint>();
 
 
-    private void Update()
+    //private void Update()
+    //{
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        RaycastHit hit;
+    //        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //        if (Physics.Raycast(ray, out hit, 100.0f))
+    //        {
+    //            ActivateVFX(hit.point);
+    //        }
+    //    }
+    //}
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, 100.0f))
-            {
-                ActivateVFX(hit.point);
-            }
-        }
+        ActivateVFX(collision.GetContact(0).point);
     }
 
     public void ActivateVFX(Vector3 point)
