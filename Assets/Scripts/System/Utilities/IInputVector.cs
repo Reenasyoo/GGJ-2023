@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace System.Utilities
+namespace Systems.Utilities
 {
     public interface IInputVector
     {

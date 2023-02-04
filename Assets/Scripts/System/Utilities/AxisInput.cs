@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace System.Utilities
+namespace Systems.Utilities
 {
-    [Serializable]
+    [System.Serializable]
     public class AxisInput : MonoBehaviour, IInput
     {
         #region Properties

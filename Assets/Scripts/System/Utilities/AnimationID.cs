@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace System.Utilities
+namespace Systems.Utilities
 {
     public static class AnimationID
     {

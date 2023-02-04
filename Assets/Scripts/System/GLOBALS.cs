@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace System
+namespace Systems
 {
     public static class GLOBALS
     {

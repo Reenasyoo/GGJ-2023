@@ -1,5 +1,5 @@
 
-namespace System.Utilities
+namespace Systems.Utilities
 {
     public interface IInput
     {

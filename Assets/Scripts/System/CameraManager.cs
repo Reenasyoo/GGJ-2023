@@ -2,7 +2,7 @@ using Cinemachine;
 using Runtime.Actor;
 using UnityEngine;
 
-namespace System.Camera
+namespace Systems.Camera
 {
     public class CameraManager : MonoBehaviour
     {

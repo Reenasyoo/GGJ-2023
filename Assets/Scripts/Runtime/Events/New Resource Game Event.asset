@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0a64e01a5b74bbbb196a98012920375, type: 3}
-  m_Name: ActorSettings
+  m_Script: {fileID: 11500000, guid: 002d38f93ca943ed823f6ef6081a8757, type: 3}
+  m_Name: New Resource Game Event
   m_EditorClassIdentifier: 
-  WalkingSpeed: 500
-  RunSpeed: 10
-  JumpHeight: 2
+  _dispatchMessage: 0
