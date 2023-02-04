@@ -7,13 +7,14 @@ namespace Runtime.Actor
     public class ActorLocomotion : MonoBehaviour
     {
         [SerializeField] private Rigidbody _rigidbody;
-
-
+        
         [SerializeField] private ActorFacade _facade;
         [SerializeField] private ActorSettings _settings;
 
         private IInput _input;
         private RigidbodyMovement _rigidbodyMovement;
+        
+        public bool CanMove = true;
 
         private void Awake()
         {
@@ -23,14 +24,19 @@ namespace Runtime.Actor
 
         private void FixedUpdate()
         {
-            _rigidbody.velocity = _rigidbodyMovement.ReturnFixedVelocity(_rigidbody);
+            if(CanMove)
+                _rigidbody.velocity = _rigidbodyMovement.ReturnFixedVelocity(_rigidbody);
         }
 
         private void Update()
         {
-            if (_rigidbodyMovement.IsMoving)
+            if (_rigidbodyMovement.IsMoving && CanMove)
             {
                 SetWalking();
+            }
+            else
+            {
+                _facade.AnimationController.SetState(ActionState.IDLE);
             }
         }
 

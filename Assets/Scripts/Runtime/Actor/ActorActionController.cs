@@ -39,6 +39,7 @@ namespace Runtime.Actor
                 if (_currentInteractionType.Pressed())
                 {
                     print("Pressed");
+                    facade.AnimationController.TriggerPickupAnimation();
                     _currentInteraction.DoInteraction();
                     _canListenForInput = false;
                 }

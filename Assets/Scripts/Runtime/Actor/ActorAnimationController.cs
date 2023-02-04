@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Systems.Utilities;
 using UnityEngine;
 
@@ -96,12 +97,31 @@ namespace Runtime.Actor
 
         public void SetForwardVelocity(float value)
         {
-            animator.SetFloat(AnimationID.FORWARD_VELOCITY, value);
+            animator.SetFloat(AnimationID.FORWARD_VELOCITY, value, 0.1f, Time.fixedDeltaTime);
         }
 
         private void SetStrafeVelocity(float value)
         {
             animator.SetFloat(AnimationID.STRAFE_VELOCITY, value);
+        }
+
+        public void TriggerPickupAnimation()
+        {
+            _facade.Locomotion.CanMove = false;
+            animator.SetTrigger(AnimationID.PICKUP_TRIGGER);
+            var clipInfo = animator.GetCurrentAnimatorClipInfo(0);
+            var clipName = clipInfo[0].clip.name;
+            print(clipName);
+            
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Pickup"))
+            {
+                print(animator.GetCurrentAnimatorStateInfo(0).length);
+            }
+        }
+
+        IEnumerator StartAnimationCountDown()
+        {
+            yield return new WaitForSeconds(1f);
         }
 
         #endregion
