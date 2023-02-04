@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a64e01a5b74bbbb196a98012920375, type: 3}
   m_Name: ActorSettings
   m_EditorClassIdentifier: 
-  WalkingSpeed: 500
+  WalkingSpeed: 300
   RunSpeed: 10
-  JumpHeight: 2
+  JumpHeight: 0
