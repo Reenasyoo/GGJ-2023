@@ -1,20 +1,18 @@
 ﻿using System;
+using Systems.GameEvents;
 using UnityEngine;
 
 namespace Runtime.Actor.InteractActions
 {
     public abstract class InteractionAction : MonoBehaviour, IInteractionAction
     {
+        [SerializeField] protected GameEvent disablePopup;
         public abstract InteractionType Type { get; }
 
         private Collider _triggerCollider;
-
         protected delegate void InteractionCallback();
         protected event InteractionCallback Callback;
-
-
-
-
+        
         protected virtual void Awake()
         {
             DetectTriggerCollider();
@@ -23,6 +21,7 @@ namespace Runtime.Actor.InteractActions
         public virtual void DoInteraction()
         {
             _triggerCollider.enabled = false;
+            disablePopup.Raise();
 
             switch (Type)
             {

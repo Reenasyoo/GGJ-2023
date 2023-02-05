@@ -16,9 +16,10 @@ namespace Runtime.Actor
             set => _canListenForInput = value;
         }
 
+        public ActionInput CurrentActionInput { get; private set; }
+
         #endregion
 
-        private ActionInput _currentInteractionType;
         private IInteractionAction _currentInteraction;
         private bool _canListenForInput = false;
 
@@ -32,9 +33,9 @@ namespace Runtime.Actor
 
         private void ListenForActionInput()
         {
-            if (_currentInteractionType != null)
+            if (CurrentActionInput != null)
             {
-                if (_currentInteractionType.Pressed())
+                if (CurrentActionInput.Pressed())
                 {
                     print("Pressed");
                     facade.AnimationController.TriggerPickupAnimation();
@@ -47,8 +48,8 @@ namespace Runtime.Actor
         public void StartListeningForInput(IInteractionAction interaction)
         {
             _canListenForInput = true;
-            _currentInteractionType = GetInputType(interaction.Type);
-            if (_currentInteractionType != null)
+            CurrentActionInput = GetInputType(interaction.Type);
+            if (CurrentActionInput != null)
             {
                 _currentInteraction = interaction;
             }

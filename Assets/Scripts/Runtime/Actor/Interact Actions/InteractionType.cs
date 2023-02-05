@@ -1,5 +1,8 @@
-﻿namespace Runtime.Actor.InteractActions
+﻿using System;
+
+namespace Runtime.Actor.InteractActions
 {
+    [Serializable]
     public enum InteractionType
     {
         Pickup,

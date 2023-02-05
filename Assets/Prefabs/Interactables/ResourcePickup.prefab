@@ -78,6 +78,7 @@ MonoBehaviour:
       type: 2}
     addableAmount: 5
     gameEvent: {fileID: 11400000, guid: d51f90afb0fd3d54d954b13d2737dac3, type: 2}
+  disablePopup: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a, type: 2}
   pickupController: {fileID: 0}
 --- !u!1001 &6231039545949120486
 PrefabInstance:

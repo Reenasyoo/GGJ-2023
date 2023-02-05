@@ -1,4 +1,5 @@
 using Lumios.System.ScriptableValues;
+using Runtime.Actor;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +8,9 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] private TMP_Text[] resourceTextObject;
 
     [SerializeField] private IntValue[] resources;
+
+    [SerializeField] private GameObject popUpPanel;
+    [SerializeField] private TMP_Text popUpText;
 
     private void Awake()
     {
@@ -27,5 +31,16 @@ public class CanvasManager : MonoBehaviour
     {
         UpdateText(0);
         UpdateText(1);
+    }
+
+    public void EnablePopUp(ActionInput input)
+    {
+        popUpText.text = $"Press {input.inputValue} to interact";
+        popUpPanel.SetActive(true);
+    }
+    
+    public void DisablePopUp()
+    {
+        popUpPanel.SetActive(false);
     }
 }

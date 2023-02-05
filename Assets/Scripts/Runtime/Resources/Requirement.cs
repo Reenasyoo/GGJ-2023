@@ -15,7 +15,8 @@ namespace Runtime.Resources
         
         public void AmountMet()
         {
-            if(Inventory.Inventory.CheckRequirement(this))
+            scriptableRequirement.reqAmount = amount;
+            if(Inventory.Inventory.CheckRequirement(scriptableRequirement))
             {
                 MonoBehaviour.print("aaa");
             }

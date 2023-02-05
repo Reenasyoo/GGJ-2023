@@ -19,7 +19,7 @@ namespace Runtime.Inventory
     public class Inventory : MonoBehaviour
     {
         [SerializeField] private List<ScriptableResource> itemTypes = new List<ScriptableResource>();
-        [SerializeField] private static List<InventoryItem> items = new List<InventoryItem>();
+        private static List<InventoryItem> items = new List<InventoryItem>();
 
         private void Awake()
         {
@@ -55,10 +55,11 @@ namespace Runtime.Inventory
             return null;
         }
 
-        public static bool CheckRequirement(Requirement req)
+        public static bool CheckRequirement(ScriptableResource req)
         {
-            var item = ItemExistsInInventory(req.scriptableRequirement);
-            return items[item.Index].resource.amount.GetValue() >= req.amount;
+            var item = ItemExistsInInventory(req);
+            var value = items[item.Index].resource.amount.GetValue();
+            return value >= req.reqAmount;
         }
     }
 }

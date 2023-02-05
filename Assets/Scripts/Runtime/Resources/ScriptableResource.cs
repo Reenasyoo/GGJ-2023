@@ -9,5 +9,6 @@ namespace Runtime.Resources
         public string Name;
         public ResourceType Type;
         public IntValue amount;
+        public int reqAmount;
     }
 }
