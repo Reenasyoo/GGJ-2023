@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Systems.GameEvents;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -15,7 +16,7 @@ namespace Runtime.Enemy
         [SerializeField] private int maxSpawnSeconds;
         [SerializeField] private GameEvent startDayEvent;
 
-        private List<GameObject> spawnedEnemies = new List<GameObject>();
+        private List<SpawnedEnemy> spawnedEnemies = new List<SpawnedEnemy>();
         
         private IEnumerator SpawnEnemies()
         {
@@ -27,7 +28,12 @@ namespace Runtime.Enemy
 
                 var enemy = Instantiate(enemyPrefabs[randomEnemyId], spawnPoints[randomSpawnPoint]);
                 enemy.GetComponent<EnemyFacade>()._callback = () => RemoveEnemy(enemyIndex);
-                spawnedEnemies.Add(enemy);
+                var tmp = new SpawnedEnemy
+                {
+                    id = enemyIndex,
+                    obj = enemy
+                };
+                spawnedEnemies.Add(tmp);
                 yield return new WaitForSeconds(maxSpawnSeconds);
             }
         }
@@ -39,7 +45,18 @@ namespace Runtime.Enemy
 
         private void RemoveEnemy(int id)
         {
-            spawnedEnemies.RemoveAt(id);
+            foreach (var enemy in spawnedEnemies.Where(enemy => enemy.id == id))
+            {
+                Destroy(enemy.obj);
+                spawnedEnemies.Remove(enemy);
+                break;
+            }
         }
+    }
+
+    public class SpawnedEnemy
+    {
+        public int id;
+        public GameObject obj;
     }
 }
