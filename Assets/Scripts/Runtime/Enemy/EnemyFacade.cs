@@ -18,7 +18,7 @@ namespace Runtime.Enemy
         public Transform Target
         {
             get => _target;
-            set =>  ;
+            set => _target = value;
         }
 
         public void TakeDamage(int damage)
@@ -28,7 +28,7 @@ namespace Runtime.Enemy
             {
                 _callback();
             }
-            
+
         }
     }
 }
