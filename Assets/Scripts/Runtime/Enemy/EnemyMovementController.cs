@@ -18,7 +18,7 @@ namespace Runtime.Enemy
 
         private void Update()
         {
-            
+            SetDestination();
         }
 
         public void DisableMovement()
