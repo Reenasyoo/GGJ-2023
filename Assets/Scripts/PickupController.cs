@@ -12,7 +12,7 @@ public class PickupController : MonoBehaviour
 
     public List<GameObject> spawnedPickups = new List<GameObject>();
 
-    void Update()
+    private void Update()
     {
         if (pickupsActive < maxPickups)
         {
@@ -26,10 +26,7 @@ public class PickupController : MonoBehaviour
             spawnedPickup.GetComponent<PickupAction>().pickupController = this;
             spawnedPickups.Add(spawnedPickup);
             pickupsActive++;
-        }
-        else
-        {
-            return;
+            print("a");
         }
     }
 }

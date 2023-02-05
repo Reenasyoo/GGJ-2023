@@ -1,4 +1,5 @@
 ﻿using System;
+using Systems.GameEvents;
 using UnityEngine;
 
 namespace Runtime.Gameplay
@@ -14,6 +15,8 @@ namespace Runtime.Gameplay
         [SerializeField] private float secondsInFullDay = 120f;
         [Range(0,1)]
         [SerializeField] private float currentTimeOfDay = 0;
+
+        [SerializeField] private GameEvent startSpawningEnemies;
         
         private float timeMultiplier = 1f;
         private DayCycle _currentDayCycle;
@@ -32,20 +35,20 @@ namespace Runtime.Gameplay
                 currentTimeOfDay += (Time.deltaTime / secondsInFullDay) * timeMultiplier;
             }
             
- 
             if (currentTimeOfDay >= 1) {
                 currentTimeOfDay = 0;
             }
 
-            if (currentTimeOfDay >= 0.75f)
+            if (currentTimeOfDay >= 0.75f && currentTimeOfDay <= 0.77f)
             {
                 _currentDayCycle = DayCycle.Night;
+                startSpawningEnemies.Raise();
+                currentTimeOfDay = 0.78f;
             }
         }
 
         private void UpdateSun() {
             sun.transform.localRotation = Quaternion.Euler((currentTimeOfDay * 360f) - 90, 170, 0);
-            
         }
 
         private void SetDayTime(DayCycle cycle)
@@ -63,6 +66,11 @@ namespace Runtime.Gameplay
                 default:
                     throw new ArgumentOutOfRangeException();
             }
+        }
+        
+        public void StartDay()
+        {
+            SetDayTime(DayCycle.Day);
         }
     }
 }
