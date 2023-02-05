@@ -18,6 +18,7 @@ namespace Runtime.Enemy
         [SerializeField] private GameEvent startDayEvent;
 
         private List<SpawnedEnemy> spawnedEnemies = new List<SpawnedEnemy>();
+        private bool spawnedAll = false;
         
         private IEnumerator SpawnEnemies()
         {
@@ -39,6 +40,8 @@ namespace Runtime.Enemy
                 spawnedEnemies.Add(tmp);
                 yield return new WaitForSeconds(maxSpawnSeconds);
             }
+            print("spawned all of enemys");
+            spawnedAll = true;
         }
 
         public void StartSpawning()
@@ -53,6 +56,14 @@ namespace Runtime.Enemy
                 Destroy(enemy.obj);
                 spawnedEnemies.Remove(enemy);
                 break;
+            }
+        }
+
+        private void Update()
+        {
+            if (spawnedAll && spawnedEnemies.Count <= 0)
+            {
+                startDayEvent.Raise();
             }
         }
     }
