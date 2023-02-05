@@ -12,15 +12,18 @@ namespace Runtime.Actor.InteractActions
         protected delegate void InteractionCallback();
         protected event InteractionCallback Callback;
 
+
+
+
         protected virtual void Awake()
         {
             DetectTriggerCollider();
         }
 
-        public void DoInteraction()
+        public virtual void DoInteraction()
         {
             _triggerCollider.enabled = false;
-            
+
             switch (Type)
             {
                 case InteractionType.Pickup:

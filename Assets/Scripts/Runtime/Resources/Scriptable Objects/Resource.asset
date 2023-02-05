@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cd4da5c4fba4262bac693b2a21583c1, type: 3}
-  m_Name: New Resource
+  m_Name: Resource
   m_EditorClassIdentifier: 
-  Name: Earth
-  Type: 0
+  Name: Resource
+  Type: 1
+  pickupObject: {fileID: 4181377282962636012, guid: 5a3dbd06d11a88a4eb2bf549794b1893,
+    type: 3}
