@@ -388,7 +388,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawnPoint (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1203,7 +1203,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawnPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1215,7 +1215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130541845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.42, y: 0.576, z: 13.41}
+  m_LocalPosition: {x: -26.13, y: 0.576, z: 13.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4747,7 +4747,7 @@ GameObject:
   m_Layer: 0
   m_Name: EnemySpawnPoint (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14569,17 +14569,17 @@ PrefabInstance:
     - target: {fileID: 1902958184744990578, guid: 27c65ae9e40e42f4ba8cdd60a61ca712,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.571976
+      value: 52.57
       objectReference: {fileID: 0}
     - target: {fileID: 1902958184744990578, guid: 27c65ae9e40e42f4ba8cdd60a61ca712,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3569565
+      value: 1.637
       objectReference: {fileID: 0}
     - target: {fileID: 1902958184744990578, guid: 27c65ae9e40e42f4ba8cdd60a61ca712,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 40.759052
+      value: 40.72
       objectReference: {fileID: 0}
     - target: {fileID: 1902958184744990578, guid: 27c65ae9e40e42f4ba8cdd60a61ca712,
         type: 3}
