@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Resource
   Type: 1
-  pickupObject: {fileID: 4181377282962636012, guid: 5a3dbd06d11a88a4eb2bf549794b1893,
-    type: 3}
+  amount: {fileID: 11400000, guid: 2a158e5783eb6a6429a87dbeef671005, type: 2}
