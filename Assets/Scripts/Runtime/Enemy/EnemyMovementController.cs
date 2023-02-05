@@ -16,11 +16,6 @@ namespace Runtime.Enemy
             SetDestination();
         }
 
-        private void Update()
-        {
-            // SetDestination();
-        }
-
         public void DisableMovement()
         {
             navMeshAgent.isStopped = true;

@@ -240,6 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementController: {fileID: 2364516304195278446}
   _collisionController: {fileID: 2364516304195278447}
+  _attackController: {fileID: 2364516304195278445}
+  _animationController: {fileID: 2364516304195278444}
   _target: {fileID: 0}
   Health: 100
   hit: {fileID: 8300000, guid: 7fcc76f772a6124449c8826e85a21cf5, type: 3}
@@ -283,6 +285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fa5f98481c49358e3b401deca0616d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _facade: {fileID: 2364516304195278440}
+  damageAmount: 10
+  cooldown: 3
 --- !u!114 &2364516304195278444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2414418299747723227}
-  _facade: {fileID: 0}
+  _facade: {fileID: 2364516304195278440}
 --- !u!54 &2364516304195278443
 Rigidbody:
   m_ObjectHideFlags: 0

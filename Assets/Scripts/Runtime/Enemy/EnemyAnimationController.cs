@@ -28,8 +28,11 @@ namespace Runtime.Enemy
 
 
             }
+        }
 
-
+        public void TriggerAttack()
+        {
+            anim.SetTrigger("Attack");
         }
     }
 }

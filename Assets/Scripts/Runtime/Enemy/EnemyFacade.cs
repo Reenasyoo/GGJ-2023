@@ -1,4 +1,5 @@
 ﻿using System;
+using Runtime.Gameplay;
 using UnityEngine;
 
 namespace Runtime.Enemy
@@ -7,13 +8,19 @@ namespace Runtime.Enemy
     {
         [SerializeField] public EnemyMovementController _movementController;
         [SerializeField] private EnemyCollisionController _collisionController;
+        [SerializeField] private EnemyAttackController _attackController;
+        [SerializeField] private EnemyAnimationController _animationController;
         [SerializeField] private Transform _target;
 
         [SerializeField] private int Health = 100;
         public Action _callback;
 
-        public EnemyMovementController MovementController => _movementController;
         public EnemyCollisionController CollisionController => _collisionController;
+        public EnemyAttackController AttackController => _attackController;
+        public EnemyMovementController MovementController => _movementController;
+        public EnemyAnimationController AnimationController => _animationController;
+        public ShieldController ShieldController { get; set; }
+
 
         public AudioClip hit;
         public AudioSource _audio;

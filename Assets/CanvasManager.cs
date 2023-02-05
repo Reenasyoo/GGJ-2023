@@ -2,6 +2,7 @@ using Lumios.System.ScriptableValues;
 using Runtime.Actor;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] private GameObject popUpPanel;
     [SerializeField] private TMP_Text popUpText;
 
+    [SerializeField] private Slider shieldSlider;
+    [SerializeField] private IntValue shieldHealth;
+
     private void Awake()
     {
         for (var i = 0; i < resourceTextObject.Length; i++)
@@ -19,6 +23,8 @@ public class CanvasManager : MonoBehaviour
             var value = resources[i].GetValue().ToString();
             resourceTextObject[i].text = value;
         }
+
+        shieldSlider.maxValue = shieldHealth.GetValue();
     }
 
     private void UpdateText(int id)
@@ -31,6 +37,7 @@ public class CanvasManager : MonoBehaviour
     {
         UpdateText(0);
         UpdateText(1);
+        UpdateShieldHealth();
     }
 
     public void EnablePopUp(ActionInput input)
@@ -42,5 +49,10 @@ public class CanvasManager : MonoBehaviour
     public void DisablePopUp()
     {
         popUpPanel.SetActive(false);
+    }
+
+    public void UpdateShieldHealth()
+    {
+        shieldSlider.value = shieldHealth.GetValue();
     }
 }

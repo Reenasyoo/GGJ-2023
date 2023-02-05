@@ -773,6 +773,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c8b2b58ffac8b5246a71d6032187285d, type: 2}
   popUpPanel: {fileID: 1255905008018023529}
   popUpText: {fileID: 6242258795335702911}
+  shieldSlider: {fileID: 1319671178685477449}
+  shieldHealth: {fileID: 11400000, guid: aa914e9f7883eac4a811f6b2335499c4, type: 2}
 --- !u!114 &5618160078031069882
 MonoBehaviour:
   m_ObjectHideFlags: 0

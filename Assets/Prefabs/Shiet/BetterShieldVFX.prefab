@@ -4824,9 +4824,10 @@ GameObject:
   - component: {fileID: 8160489896228286012}
   - component: {fileID: 8160489896228285953}
   - component: {fileID: 8160489896228286014}
+  - component: {fileID: 1130870989957955098}
   m_Layer: 0
   m_Name: BetterShieldVFX
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4840,7 +4841,7 @@ Transform:
   m_GameObject: {fileID: 8160489896228286013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.34, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 2.9711, y: 2.9711, z: 2.9711}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 424384477562528757}
@@ -4891,3 +4892,16 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1130870989957955098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160489896228286013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a313e68ea0054db3b40622e713276b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldHealth: {fileID: 11400000, guid: aa914e9f7883eac4a811f6b2335499c4, type: 2}

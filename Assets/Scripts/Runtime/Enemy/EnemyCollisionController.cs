@@ -1,4 +1,5 @@
 ﻿using System;
+using Runtime.Gameplay;
 using UnityEngine;
 
 namespace Runtime.Enemy
@@ -10,7 +11,9 @@ namespace Runtime.Enemy
         {
             if (other.collider.CompareTag("Shield"))
             {
+                _facade.ShieldController = other.collider.GetComponent<ShieldController>();
                 _facade.MovementController.DisableMovement();
+                _facade.AttackController.CanAttack = true;
             }
         }
 
