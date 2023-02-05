@@ -27,7 +27,7 @@ namespace Runtime.Enemy
                 var randomEnemyId = Random.Range(0, enemyPrefabs.Length);
                 var randomSpawnPoint = Random.Range(0, spawnPoints.Length);
 
-                var enemy = Instantiate(enemyPrefabs[randomEnemyId], spawnPoints[randomSpawnPoint]);
+                var enemy = Instantiate(enemyPrefabs[randomEnemyId], spawnPoints[randomSpawnPoint].position, Quaternion.identity);
                 var enemyComp = enemy.GetComponent<EnemyFacade>();
                 enemyComp._callback = () => RemoveEnemy(enemyIndex);
                 enemyComp.Target = target;
