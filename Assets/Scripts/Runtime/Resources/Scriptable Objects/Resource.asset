@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Resource
   Type: 1
-  amount: {fileID: 11400000, guid: 2a158e5783eb6a6429a87dbeef671005, type: 2}
+  amount: {fileID: 11400000, guid: c8b2b58ffac8b5246a71d6032187285d, type: 2}
