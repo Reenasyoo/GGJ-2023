@@ -61,5 +61,13 @@ namespace Runtime.Inventory
             var value = items[item.Index].resource.amount.GetValue();
             return value >= req.reqAmount;
         }
+
+        public static void RemoveResource(ScriptableResource req, int amount)
+        {
+            var item = ItemExistsInInventory(req);
+            var value = items[item.Index].resource.amount.GetValue();
+            value -= amount;
+            items[item.Index].resource.amount.value = value;
+        }
     }
 }

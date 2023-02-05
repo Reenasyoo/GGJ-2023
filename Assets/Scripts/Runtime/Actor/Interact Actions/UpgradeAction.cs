@@ -1,4 +1,5 @@
 ﻿using Runtime.Resources;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 namespace Runtime.Actor.InteractActions
@@ -19,7 +20,7 @@ namespace Runtime.Actor.InteractActions
         {
             if (upgradeRequirement.AmountMet())
             {
-                Debug.Log("asd");
+                upgradeRequirement.Remove();
                 GetComponent<Building>().SetBuilding();
                 GetComponent<Building>().baseCircle.SetActive(false);
                 GetComponent<Building>().built = true;

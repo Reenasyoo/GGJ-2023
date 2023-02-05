@@ -15,7 +15,6 @@ namespace Runtime.Resources
 
         public bool AmountMet()
         {
-
             scriptableRequirement.reqAmount = amount;
             if(Inventory.Inventory.CheckRequirement(scriptableRequirement))
             {
@@ -25,6 +24,11 @@ namespace Runtime.Resources
             {
                 return false;
             }
+        }
+
+        public void Remove()
+        {
+            Inventory.Inventory.RemoveResource(scriptableRequirement, amount);
         }
     }
 }
