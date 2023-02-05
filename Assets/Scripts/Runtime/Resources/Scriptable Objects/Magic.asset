@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Magic
   Type: 0
-  pickupObject: {fileID: 4928078935035056708, guid: 65857f1853aa5354e9d393a336163097,
-    type: 3}
+  amount: {fileID: 11400000, guid: 2a158e5783eb6a6429a87dbeef671005, type: 2}

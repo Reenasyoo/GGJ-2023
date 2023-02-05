@@ -76,7 +76,7 @@ MonoBehaviour:
   resource:
     scriptableResource: {fileID: 11400000, guid: 82250ffd907763540a8452463fef8444,
       type: 2}
-    Amount: 5
+    addableAmount: 5
     gameEvent: {fileID: 11400000, guid: d51f90afb0fd3d54d954b13d2737dac3, type: 2}
   pickupController: {fileID: 0}
 --- !u!1001 &6231039545949120486
