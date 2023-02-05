@@ -25,7 +25,7 @@ namespace Runtime.Actor
         private void FixedUpdate()
         {
             if(CanMove)
-                _rigidbody.velocity = _rigidbodyMovement.ReturnFixedVelocity(_rigidbody);
+                _rigidbody.velocity = _rigidbodyMovement.ReturnFixedVelocity(_rigidbody).normalized;
         }
 
         private void Update()
