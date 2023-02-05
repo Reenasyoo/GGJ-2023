@@ -28,7 +28,7 @@ public class ShieldRipples : MonoBehaviour
     {
         ActivateVFX(collision.GetContact(0).point);
     }
-    
+
 
     public void ActivateVFX(Vector3 point)
     {
@@ -41,7 +41,7 @@ public class ShieldRipples : MonoBehaviour
         }
 
         var psr = ripples.transform.GetChild(0).GetComponent<ParticleSystemRenderer>();
-
+        psr.gameObject.transform.localScale = transform.localScale;
         mat = psr.material;
         mat.SetVector("_SphereCenter", point);
     }
