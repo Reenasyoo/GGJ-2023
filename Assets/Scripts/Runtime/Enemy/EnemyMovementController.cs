@@ -28,7 +28,8 @@ namespace Runtime.Enemy
 
         public void SetDestination()
         {
-            if(_facade.Target != null) navMeshAgent.SetDestination(_facade.Target.position);
+            if (_facade.Target != null) navMeshAgent.SetDestination(_facade.Target.position);
+            Debug.Log(_facade.Target.position);
             navMeshAgent.isStopped = false;
         }
     }
