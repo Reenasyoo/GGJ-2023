@@ -2500,6 +2500,12 @@ PrefabInstance:
       propertyPath: curType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -2609,6 +2615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6788946869953075084, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -4305,6 +4316,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -4369,6 +4401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -4474,6 +4511,12 @@ PrefabInstance:
       propertyPath: curType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -4538,6 +4581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -5624,6 +5672,12 @@ PrefabInstance:
       propertyPath: curType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -5738,6 +5792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -6356,6 +6415,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.18
       objectReference: {fileID: 0}
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1681694113833102037, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: curType
@@ -6366,6 +6430,12 @@ PrefabInstance:
       propertyPath: curType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -6480,6 +6550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -8518,6 +8593,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -8582,6 +8663,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -8751,6 +8837,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -8815,6 +8907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -14014,6 +14111,12 @@ PrefabInstance:
       propertyPath: curType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -14078,6 +14181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -15884,6 +15992,12 @@ PrefabInstance:
       propertyPath: curType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -15998,6 +16112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -18671,6 +18790,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -18735,6 +18875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
@@ -20088,6 +20233,8 @@ MonoBehaviour:
   resources:
   - {fileID: 11400000, guid: 2a158e5783eb6a6429a87dbeef671005, type: 2}
   - {fileID: 11400000, guid: c8b2b58ffac8b5246a71d6032187285d, type: 2}
+  popUpPanel: {fileID: 0}
+  popUpText: {fileID: 0}
 --- !u!1001 &1923944035622002706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20095,6 +20242,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 845574755798560456, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107202865309988768, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: disablePopup
+      value: 
+      objectReference: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a,
+        type: 2}
     - target: {fileID: 5786070160365204071, guid: 1f095e41b78880246acc81754f51be33,
         type: 3}
       propertyPath: m_RootOrder
@@ -20164,6 +20332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuildingCircle (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559370309781055709, guid: 1f095e41b78880246acc81754f51be33,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f095e41b78880246acc81754f51be33, type: 3}

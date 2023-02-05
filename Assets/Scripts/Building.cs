@@ -9,6 +9,7 @@ public class Building : MonoBehaviour
     private GameObject holo;
     private GameObject building;
     public GameObject baseCircle;
+    public bool built;
 
     public GameObject tower, towerHolo, wall, wallHolo;
 
@@ -19,6 +20,14 @@ public class Building : MonoBehaviour
     }
 
     public Type curType;
+
+    private void Update()
+    {
+        if (!built)
+        {
+            Show();
+        }
+    }
 
     void Start()
     {
@@ -33,7 +42,7 @@ public class Building : MonoBehaviour
             building = wall;
         }
 
-        InvokeRepeating("Show", 0f, 0.5f);
+
         player = GameObject.FindGameObjectWithTag("Player");
     }
 

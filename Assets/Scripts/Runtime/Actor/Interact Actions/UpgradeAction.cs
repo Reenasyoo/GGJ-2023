@@ -22,6 +22,7 @@ namespace Runtime.Actor.InteractActions
                 Debug.Log("asd");
                 GetComponent<Building>().SetBuilding();
                 GetComponent<Building>().baseCircle.SetActive(false);
+                GetComponent<Building>().built = true;
             }
         }
     }

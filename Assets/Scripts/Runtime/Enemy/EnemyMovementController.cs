@@ -7,7 +7,7 @@ namespace Runtime.Enemy
     public class EnemyMovementController : MonoBehaviour
     {
         [SerializeField] private EnemyFacade _facade;
-        [SerializeField] private NavMeshAgent navMeshAgent;
+        [SerializeField] public NavMeshAgent navMeshAgent;
 
         private bool targetInRange = false;
 

@@ -5,7 +5,7 @@ namespace Runtime.Enemy
 {
     public class EnemyFacade : MonoBehaviour
     {
-        [SerializeField] private EnemyMovementController _movementController;
+        [SerializeField] public EnemyMovementController _movementController;
         [SerializeField] private EnemyCollisionController _collisionController;
         [SerializeField] private Transform _target;
 
