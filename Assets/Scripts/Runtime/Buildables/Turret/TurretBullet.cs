@@ -1,5 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using Runtime.Buildables.Turret;
+using Runtime.Enemy;
 using UnityEngine;
 
 public class TurretBullet : MonoBehaviour
@@ -17,7 +18,7 @@ public class TurretBullet : MonoBehaviour
         target = _target;
     }
 
-    [HideInInspector] public Runtime.Buildables.Turret.TurretAttackController controller;
+    [HideInInspector] public TurretAttackController controller;
 
     void Update()
     {
@@ -30,11 +31,11 @@ public class TurretBullet : MonoBehaviour
         Vector3 dir = target.position - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
 
-        if (dir.magnitude - 1f <= distanceThisFrame)
-        {
-            HitTarget();
-            return;
-        }
+        // if (dir.magnitude - 1f <= distanceThisFrame)
+        // {
+        //     HitTarget();
+        //     return;
+        // }
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
         transform.LookAt(target);
@@ -44,12 +45,17 @@ public class TurretBullet : MonoBehaviour
     {
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 5f);
-        Damage(target);
         controller.DeactivateBullet();
     }
+    
 
-    void Damage(Transform enemy)
+    private void OnTriggerEnter(Collider other)
     {
-        //Do damage to enemy
+        if (other.CompareTag("Enemy"))
+        {
+            HitTarget();
+            var enemy = other.GetComponent<EnemyFacade>();
+            enemy.TakeDamage(-20);
+        }
     }
 }
