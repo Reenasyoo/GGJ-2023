@@ -10,6 +10,7 @@ namespace Runtime.Enemy
 {
     public class EnemySpawner : MonoBehaviour
     {
+        [SerializeField] private Transform target;
         [SerializeField] private GameObject[] enemyPrefabs;
         [SerializeField] private Transform[] spawnPoints;
         [SerializeField] private int spawnAmount;
@@ -27,7 +28,9 @@ namespace Runtime.Enemy
                 var randomSpawnPoint = Random.Range(0, spawnPoints.Length);
 
                 var enemy = Instantiate(enemyPrefabs[randomEnemyId], spawnPoints[randomSpawnPoint]);
-                enemy.GetComponent<EnemyFacade>()._callback = () => RemoveEnemy(enemyIndex);
+                var enemyComp = enemy.GetComponent<EnemyFacade>();
+                enemyComp._callback = () => RemoveEnemy(enemyIndex);
+                enemyComp.Target = target;
                 var tmp = new SpawnedEnemy
                 {
                     id = enemyIndex,

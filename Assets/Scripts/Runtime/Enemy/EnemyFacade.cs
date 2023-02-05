@@ -15,8 +15,12 @@ namespace Runtime.Enemy
         public EnemyMovementController MovementController => _movementController;
         public EnemyCollisionController CollisionController => _collisionController;
 
-        public Transform Target => _target;
-        
+        public Transform Target
+        {
+            get => _target;
+            set =>  ;
+        }
+
         public void TakeDamage(int damage)
         {
             Health += damage;
