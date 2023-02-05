@@ -13,7 +13,7 @@ namespace Runtime.Enemy
 
         private void Awake()
         {
-            SetDestination();
+            // SetDestination();
         }
 
         private void Update()
