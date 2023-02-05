@@ -11,25 +11,26 @@ namespace Runtime.Enemy
 
         private bool targetInRange = false;
 
-        private void Awake()
+        private void Start()
         {
-            // SetDestination();
+            SetDestination();
         }
 
         private void Update()
         {
-            SetDestination();
+            // SetDestination();
         }
 
         public void DisableMovement()
         {
             navMeshAgent.isStopped = true;
+
         }
 
         public void SetDestination()
         {
             if (_facade.Target != null) navMeshAgent.SetDestination(_facade.Target.position);
-            Debug.Log(navMeshAgent.destination);
+            Debug.Log(navMeshAgent.hasPath);
             navMeshAgent.isStopped = false;
         }
     }

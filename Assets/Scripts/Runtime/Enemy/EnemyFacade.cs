@@ -15,6 +15,9 @@ namespace Runtime.Enemy
         public EnemyMovementController MovementController => _movementController;
         public EnemyCollisionController CollisionController => _collisionController;
 
+        public AudioClip hit;
+        public AudioSource _audio;
+
         public Transform Target
         {
             get => _target;
@@ -23,6 +26,8 @@ namespace Runtime.Enemy
 
         public void TakeDamage(int damage)
         {
+            _audio.clip = hit;
+            _audio.Play();
             Health += damage;
             if (Health <= 0)
             {

@@ -13,17 +13,23 @@ namespace Runtime.Gameplay
     {
         [SerializeField] private Light sun;
         [SerializeField] private float secondsInFullDay = 120f;
-        [Range(0,1)]
+        [Range(0, 1)]
         [SerializeField] private float currentTimeOfDay = 0;
 
         [SerializeField] private GameEvent startSpawningEnemies;
-        
+
         private float timeMultiplier = 1f;
         private DayCycle _currentDayCycle;
+
+        public AudioSource _audio;
+        public AudioClip[] music;
+        public int currentClip;
+        bool playNightMusic = true;
 
         private void Awake()
         {
             SetDayTime(DayCycle.Day);
+            PlayDayMusic();
         }
 
         private void Update()
@@ -31,23 +37,30 @@ namespace Runtime.Gameplay
             if (_currentDayCycle != DayCycle.Night)
             {
                 UpdateSun();
- 
+
                 currentTimeOfDay += (Time.deltaTime / secondsInFullDay) * timeMultiplier;
             }
-            
-            if (currentTimeOfDay >= 1) {
+
+            if (currentTimeOfDay >= 1)
+            {
                 currentTimeOfDay = 0;
             }
 
             if (currentTimeOfDay >= 0.75f && currentTimeOfDay <= 0.77f)
             {
                 _currentDayCycle = DayCycle.Night;
+                if (playNightMusic)
+                {
+                    PlayNightMusic();
+                    playNightMusic = false;
+                }
                 startSpawningEnemies.Raise();
                 currentTimeOfDay = 0.78f;
             }
         }
 
-        private void UpdateSun() {
+        private void UpdateSun()
+        {
             sun.transform.localRotation = Quaternion.Euler((currentTimeOfDay * 360f) - 90, 170, 0);
         }
 
@@ -67,10 +80,24 @@ namespace Runtime.Gameplay
                     throw new ArgumentOutOfRangeException();
             }
         }
-        
+
         public void StartDay()
         {
             SetDayTime(DayCycle.Day);
         }
+        void PlayNightMusic()
+        {
+            _audio.Stop();
+            _audio.clip = music[1];
+            _audio.Play();
+        }
+        void PlayDayMusic()
+        {
+            _audio.Stop();
+            _audio.clip = music[0];
+            _audio.Play();
+        }
     }
+
+
 }
