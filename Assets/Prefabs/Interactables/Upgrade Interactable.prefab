@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4384504ad274a9fa6d7402c8592c722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disablePopup: {fileID: 11400000, guid: f820d990976a1ae43aa2a4692c09286a, type: 2}
   upgradeRequirement:
     scriptableRequirement: {fileID: 0}
     amount: 0

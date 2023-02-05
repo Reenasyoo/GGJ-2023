@@ -69,7 +69,7 @@ namespace Runtime.Gameplay
             switch (cycle)
             {
                 case DayCycle.Day:
-                    currentTimeOfDay = 0.25f;
+                    currentTimeOfDay = 0.35f;
                     _currentDayCycle = DayCycle.Day;
                     break;
                 case DayCycle.Night:

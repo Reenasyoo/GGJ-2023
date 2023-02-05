@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Fade : MonoBehaviour
 {
     public Image fadeImg;
-
+    public GameObject loading;
     private void Start()
     {
         fadeImg.gameObject.SetActive(true);
@@ -33,6 +33,7 @@ public class Fade : MonoBehaviour
             yield return null;
         }
         //load scene
+        loading.SetActive(true);
         SceneManager.LoadSceneAsync("Art");
     }
     public IEnumerator FadeOut(float timeSpeed)
