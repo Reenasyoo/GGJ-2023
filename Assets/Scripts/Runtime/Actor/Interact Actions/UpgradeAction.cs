@@ -8,7 +8,7 @@ namespace Runtime.Actor.InteractActions
         public override InteractionType Type => InteractionType.Upgrade;
 
         [SerializeField] private Requirement upgradeRequirement;
-        
+
         protected override void Awake()
         {
             base.Awake();
@@ -17,7 +17,12 @@ namespace Runtime.Actor.InteractActions
 
         private void UpgradeRequirement()
         {
-            upgradeRequirement.AmountMet();
+            if (upgradeRequirement.AmountMet())
+            {
+                Debug.Log("asd");
+                GetComponent<Building>().SetBuilding();
+                GetComponent<Building>().baseCircle.SetActive(false);
+            }
         }
     }
 }

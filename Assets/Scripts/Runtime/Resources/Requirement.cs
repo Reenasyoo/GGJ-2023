@@ -9,15 +9,19 @@ namespace Runtime.Resources
     {
         public ScriptableResource scriptableRequirement;
         public int amount;
-        
+
         [Header("Event")]
         public ResourceGameEvent gameEvent;
-        
-        public void AmountMet()
+
+        public bool AmountMet()
         {
-            if(Inventory.Inventory.CheckRequirement(this))
+            if (Inventory.Inventory.CheckRequirement(this))
             {
-                MonoBehaviour.print("aaa");
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
