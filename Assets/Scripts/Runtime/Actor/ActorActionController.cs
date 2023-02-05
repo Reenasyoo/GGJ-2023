@@ -1,4 +1,4 @@
- using System.Collections.Generic;
+using System.Collections.Generic;
 using Runtime.Actor.InteractActions;
 using UnityEngine;
 
@@ -17,7 +17,7 @@ namespace Runtime.Actor
         }
 
         #endregion
-        
+
         private ActionInput _currentInteractionType;
         private IInteractionAction _currentInteraction;
         private bool _canListenForInput = false;
@@ -58,7 +58,7 @@ namespace Runtime.Actor
         {
             _canListenForInput = false;
         }
-        
+
         private ActionInput GetInputType(InteractionType type)
         {
             foreach (var input in inputs)

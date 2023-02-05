@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Runtime.Actor
 {
-    
+
     public enum ActionState
     {
         IDLE = 0,
@@ -21,7 +21,7 @@ namespace Runtime.Actor
     {
         [SerializeField] private ActorFacade _facade;
         [SerializeField] private Animator animator = null;
-        
+
 
         private readonly float[] forwardVelocityAnimationSpeed = new[]
         {
@@ -30,14 +30,14 @@ namespace Runtime.Actor
             0.75f,       // Run
             1f,    // Sprint
         };
-        
+
         private readonly float[] strafeVelocityAnimationSpeed = new[]
         {
             0.5f,    // Walking 
             0.75f,    // Running
             1f        // Sprinting
         };
-        
+
         private readonly float[] characterRotationAngles = new[]
         {
             -1f,    // [0] Left 90 turn
@@ -78,7 +78,7 @@ namespace Runtime.Actor
                 default:
                     throw new ArgumentOutOfRangeException(nameof(state), state, null);
             }
-            
+
             SetForwardVelocity(forward);
         }
 
@@ -117,7 +117,7 @@ namespace Runtime.Actor
             yield return new WaitForSeconds(0.2f);
             var clipInfo = animator.GetCurrentAnimatorClipInfo(0);
             var clipLenght = clipInfo[0].clip.length;
-            yield return new WaitForSeconds((clipLenght / 3) + 0.2f);
+            yield return new WaitForSeconds((clipLenght / 6) + 0.2f);
             _facade.Locomotion.CanMove = true;
         }
 
