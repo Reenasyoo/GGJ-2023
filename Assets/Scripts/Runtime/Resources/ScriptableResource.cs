@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Lumios.System.ScriptableValues;
+using UnityEngine;
 
 namespace Runtime.Resources
 {
@@ -7,5 +8,6 @@ namespace Runtime.Resources
     {
         public string Name;
         public ResourceType Type;
+        public IntValue amount;
     }
 }
