@@ -35,7 +35,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Texture:
-        m_Texture: {fileID: 2800000, guid: 1cb81e4b64aa506498cfd746a8f14eab, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0462343f7abdc314ab7a45b0a649592c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -64,5 +64,5 @@ Material:
     m_Colors:
     - _ShieldColor: {r: 0, g: 33.210655, b: 166.92725, a: 1}
     - _ShieldTextureTiling: {r: 1, g: 1, b: 0, a: 0}
-    - _VertexOffsetDIrection: {r: 0.3, g: 0.3, b: 0.3, a: 0}
+    - _VertexOffsetDIrection: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

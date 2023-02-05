@@ -17,7 +17,10 @@ public class TurretBullet : MonoBehaviour
         target = _target;
     }
 
+
     [HideInInspector] public Runtime.Buildables.Turret.TurretAttackController controller;
+
+
 
     void Update()
     {

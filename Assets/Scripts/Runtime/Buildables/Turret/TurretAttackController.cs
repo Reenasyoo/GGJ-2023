@@ -18,6 +18,9 @@ namespace Runtime.Buildables.Turret
         private float fireCountdown = 0;
         private Transform target;
 
+        AudioSource _audio;
+        public AudioClip shootSound;
+
         private void Awake()
         {
             Init();
@@ -28,6 +31,7 @@ namespace Runtime.Buildables.Turret
             _ammoPool = new ObjectPool<GameObject>(ammunition, 5);
             InstantiatePoolObjects();
             InvokeRepeating("UpdateTarget", 0f, 0.5f);
+            _audio = GetComponent<AudioSource>();
         }
 
         private void InstantiatePoolObjects()
@@ -68,6 +72,8 @@ namespace Runtime.Buildables.Turret
         private void Attack()
         {
             ActivateBullet();
+            _audio.clip = shootSound;
+            _audio.Play();
         }
 
         private void Update()
