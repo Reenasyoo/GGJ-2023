@@ -1,4 +1,5 @@
 ﻿using System;
+using Lumios.System.ScriptableValues;
 using Runtime.Resources;
 using UnityEngine;
 
@@ -8,11 +9,11 @@ namespace Runtime.Inventory
     public class InventoryItem
     {
         public ScriptableResource resource;
-        public int amount = 0;
+        // public IntValue amount;
         public InventoryItem(ScriptableResource res)
         {
             resource = res;
-            amount = 0;
+            resource.amount.SetValue(0);
         }
     }
 }
